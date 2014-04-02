@@ -45,11 +45,11 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    CGFloat height = 44.0;
     self.prototypeCell.string = self.strings[indexPath.row];
     [self.prototypeCell setNeedsLayout];
     [self.prototypeCell layoutIfNeeded];
-    CGSize size = [self.prototypeCell systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+    CGSize size = [self.prototypeCell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+    CGFloat height = size.height;
     return height;
 }
 

@@ -20,14 +20,25 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdU-dF-7uh">
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="148" translatesAutoresizingMaskIntoConstraints="NO" id="hdU-dF-7uh">
                                             <rect key="frame" x="79" y="29" width="148" height="42"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="0.5" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="148" id="NQH-Tb-z6b"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="42" id="hbI-rn-rk5"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="hdU-dF-7uh" secondAttribute="trailing" constant="93" id="Bmh-N1-IWf"/>
+                                        <constraint firstItem="hdU-dF-7uh" firstAttribute="top" secondItem="dzU-tj-Izj" secondAttribute="top" constant="29" id="Uwp-wJ-cfB"/>
+                                        <constraint firstItem="hdU-dF-7uh" firstAttribute="leading" secondItem="dzU-tj-Izj" secondAttribute="leading" constant="79" id="qya-pn-FTy"/>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="hdU-dF-7uh" secondAttribute="bottom" priority="750" constant="28" id="rJi-IE-kRu"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="1" green="0.74117648599999997" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                                 <connections>
