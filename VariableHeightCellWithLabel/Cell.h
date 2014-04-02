@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  Cell.h
 //  VariableHeightCellWithLabel
 //
 //  Created by Claes Lillieskold on 2014-04-02.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UITableViewController
-
+@interface Cell : UITableViewCell
+@property (nonatomic, strong) NSString *string;
 @end

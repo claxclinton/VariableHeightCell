@@ -7,23 +7,46 @@
 //
 
 #import "ViewController.h"
+#import "Cell.h"
 
 @interface ViewController ()
-
+@property (nonatomic, strong) Cell *prototypeCell;
+@property (nonatomic, strong) NSString *shortString;
+@property (nonatomic, strong) NSString *longString;
+@property (nonatomic, strong) NSArray *strings;
 @end
 
 @implementation ViewController
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.prototypeCell = [self.tableView dequeueReusableCellWithIdentifier:@"cell"];
+    self.shortString = @"Munk munk";
+    self.longString = @"Mitt liv är i nedan och klent nu mitt verk, "
+    "jag fattige olärde bortrymde klerk, "
+    "en bortlupen broder bara, "
+    "fördömd av kapitlet i Skara."
+    "Nu är jag en gammal och böjder man, "
+    "åt den onde given av kyrkans bann "
+    "för dråp och trilska och kätteri "
+    "och av kungen förklarad för fågelfri.";
+    self.strings = @[self.shortString, self.longString];
 }
 
-- (void)didReceiveMemoryWarning
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    return 1;
 }
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 2;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    Cell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    cell.string = self.strings[indexPath.row];
+    return cell;
+}
 @end

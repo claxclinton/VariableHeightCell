@@ -21,6 +21,7 @@
 		4B2FAAE218EC2AE200407A06 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2FAAC418EC2AE100407A06 /* UIKit.framework */; };
 		4B2FAAEA18EC2AE200407A06 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4B2FAAE818EC2AE200407A06 /* InfoPlist.strings */; };
 		4B2FAAEC18EC2AE200407A06 /* VariableHeightCellWithLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2FAAEB18EC2AE200407A06 /* VariableHeightCellWithLabelTests.m */; };
+		4B2FAAF718EC2B6700407A06 /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2FAAF618EC2B6700407A06 /* Cell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		4B2FAAE718EC2AE200407A06 /* VariableHeightCellWithLabelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VariableHeightCellWithLabelTests-Info.plist"; sourceTree = "<group>"; };
 		4B2FAAE918EC2AE200407A06 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4B2FAAEB18EC2AE200407A06 /* VariableHeightCellWithLabelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VariableHeightCellWithLabelTests.m; sourceTree = "<group>"; };
+		4B2FAAF518EC2B6700407A06 /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
+		4B2FAAF618EC2B6700407A06 /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				4B2FAAD218EC2AE100407A06 /* Main.storyboard */,
 				4B2FAAD518EC2AE100407A06 /* ViewController.h */,
 				4B2FAAD618EC2AE100407A06 /* ViewController.m */,
+				4B2FAAF518EC2B6700407A06 /* Cell.h */,
+				4B2FAAF618EC2B6700407A06 /* Cell.m */,
 				4B2FAAD818EC2AE100407A06 /* Images.xcassets */,
 				4B2FAAC718EC2AE100407A06 /* Supporting Files */,
 			);
@@ -250,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B2FAAD718EC2AE100407A06 /* ViewController.m in Sources */,
+				4B2FAAF718EC2B6700407A06 /* Cell.m in Sources */,
 				4B2FAAD118EC2AE100407A06 /* AppDelegate.m in Sources */,
 				4B2FAACD18EC2AE100407A06 /* main.m in Sources */,
 			);
