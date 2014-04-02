@@ -43,6 +43,16 @@
     return 2;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    CGFloat height = 44.0;
+    self.prototypeCell.string = self.strings[indexPath.row];
+    [self.prototypeCell setNeedsLayout];
+    [self.prototypeCell layoutIfNeeded];
+    CGSize size = [self.prototypeCell systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+    return height;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     Cell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
